@@ -1,0 +1,16 @@
+name: Buddy Review Assigner Action
+description: A GitHub Action that automatically assigns a designated buddy to Pull Requests for use during their onboarding process.
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+inputs:
+  token:
+    required: true
+    description: An access token to the GitHub Repository (i.e `{{ secrets.GITHUB_TOKEN }}`)
+  pr_number:
+    required: false
+    description: The number of the Pull Request to check in the current repository
+  buddies:
+    required: true
+    description: Path to the buddies.yml definition which includes mappings of GitHub users
+    default: .github/buddies.yml

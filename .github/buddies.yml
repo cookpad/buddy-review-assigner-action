@@ -1,0 +1,8 @@
+# This file contains a map of new starters and their buddies.
+#
+# Adding a mapping will ensure that both the new starter and their buddy
+# will be synced as reviewers on pull requests in this repository.
+#
+# https://github.com/cookpad/buddy-review-assigner-action
+
+waliahimanshu: ainame
